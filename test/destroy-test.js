@@ -1,4 +1,4 @@
-const test         = require('tap').test
+const test         = require('tape')
     , fs           = require('fs')
     , path         = require('path')
     , mkfiletree   = require('mkfiletree')

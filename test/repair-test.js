@@ -1,4 +1,4 @@
-const test         = require('tap').test
+const test         = require('tape')
     , fs           = require('fs')
     , path         = require('path')
     , mkfiletree   = require('mkfiletree')
@@ -27,7 +27,7 @@ test('test callback-less, 1-arg, repair() throws', function (t) {
 
 test('test repair non-existant directory returns error', function (t) {
   leveldown.repair('/1/2/3/4', function (err) {
-    t.like(/no such/i, err, 'error on callback')
+    t.ok(/no such/i.test(err), 'error on callback')
     t.end()
   })
 })
