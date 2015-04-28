@@ -5,7 +5,7 @@ const test         = require('tape')
     , readfiletree = require('readfiletree')
     , testCommon   = require('abstract-leveldown/testCommon')
     , leveldown    = require('../')
-    , makeTest     = require('./make-test')
+    , makeTest     = require('./make')
 
 test('test argument-less destroy() throws', function (t) {
   t.throws(
