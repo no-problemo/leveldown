@@ -19,5 +19,4 @@ module.exports.all = function (leveldown) {
   module.exports.tearDown()
 }
 
-if (require.main === module)
-  module.exports.all(leveldown)
+module.exports.all(leveldown)

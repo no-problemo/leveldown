@@ -6,5 +6,4 @@ const test       = require('tape')
     , testBuffer = fs.readFileSync(path.join(__dirname, 'data/testdata.bin'))
     , abstract   = require('abstract-leveldown/abstract/put-get-del-test')
 
-if (require.main === module)
-  abstract.all(leveldown, test, testCommon, testBuffer)
+abstract.all(leveldown, test, testCommon, testBuffer)

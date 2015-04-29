@@ -47,7 +47,7 @@
     "tape": "~4.0.0"
   },
   "scripts": {
-    "test": "set -e; for t in test/*-test.js; do node $t | faucet; done"
+    "test": "tape test/*-test.js | faucet"
   },
   "license": "MIT",
   "gypfile": true

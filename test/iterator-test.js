@@ -3,5 +3,4 @@ const test       = require('tape')
     , leveldown  = require('../')
     , abstract   = require('abstract-leveldown/abstract/iterator-test')
 
-if (require.main === module)
-  abstract.all(leveldown, test, testCommon)
+abstract.all(leveldown, test, testCommon)
